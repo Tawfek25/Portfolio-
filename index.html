@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tawfek Ahmed | Biotech Portfolio</title>
+  <meta name="description" content="Tawfek Ahmed - Biotechnology graduate specialized in molecular biology, microbiology, and bioinformatics.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bioCanvas" class="bg-canvas"></canvas>
+
+<nav class="navbar">
+  <div class="nav-container container">
+    <div class="logo">Tawfek<span>.bio</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active-nav">Home</a></li>
+      <li><a href="#research" class="nav-link">Research</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#training" class="nav-link">Training</a></li>
+      <li><a href="#bioinfo" class="nav-link">Bioinfo</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero full-section">
+    <div class="hero-bg-shape"></div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="badge-group">
+          <span class="badge"><i class="fas fa-flask"></i> BSc Biotechnology 2025</span>
+          <span class="badge"><i class="fas fa-certificate"></i> GMP & HACCP</span>
+        </div>
+        <h1>Tawfek <span class="accent">Ahmed</span></h1>
+        <div class="typed-container">
+          <span class="typed-prefix">🔬 </span><span id="typed-role" class="typed-role"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-description">Molecular biologist & microbiologist with hands‑on experience in PCR, DNA/RNA extraction, microbial antagonism, enzyme characterization, and R‑based bioinformatics.</p>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-number" id="expMonths">0</span><span>Research months</span></div>
+          <div class="stat-item"><span class="stat-number" id="certCount">0</span><span>Certifications</span></div>
+          <div class="stat-item"><span class="stat-number" id="projectsCount">0</span><span>Projects</span></div>
+        </div>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn-primary">Contact me <i class="fas fa-paper-plane"></i></a>
+          <a href="#" id="downloadCVBtn" class="btn-outline">Download CV <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="profile.png" alt="Tawfek Ahmed" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Tawfek+Ahmed&background=0f8b7c&color=fff&size=360&rounded=true&bold=true';">
+        <div class="photo-badge"><i class="fas fa-microscope"></i> Biotech Researcher</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Experience -->
+  <section id="research" class="section full-section">
+    <div class="container">
+      <h2 class="section-title">🔬 Research experience</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-lab"></i></div>
+          <h3>Research Assistant – Microbiology Lab</h3>
+          <p class="meta">Nov 2023 – May 2025 · Mansoura University</p>
+          <ul>
+            <li>Supported 18‑month Master's research: media preparation, sterilization, lab operations.</li>
+            <li>Enzyme isolation, production workflows, and data reproducibility.</li>
+            <li>Participated in experimental planning and result interpretation.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Graduation Project: Endophytic Bacteria vs. Molds</h3>
+          <p class="meta">Dr. Abdelrahman Elattapy Lab · 2024–2025</p>
+          <ul>
+            <li>Isolated endophytic bacteria from multiple plant species.</li>
+            <li>Performed antagonism tests against fungal pathogens.</li>
+            <li>Eco‑friendly biocontrol alternative to chemical agents.</li>
+          </ul>
+          <div class="skill-tags">
+            <span>Antagonism assays</span><span>Fungal isolation</span><span>Biocontrol</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills + Radar Chart -->
+  <section id="skills" class="section full-section alt-bg">
+    <div class="container">
+      <h2 class="section-title">🧪 Technical radar & skills</h2>
+      <div class="skills-dashboard">
+        <div class="radar-container">
+          <canvas id="radarChart" width="400" height="400"></canvas>
+        </div>
+        <div class="skills-list">
+          <h3>Hands-on expertise</h3>
+          <div class="tags-cloud">
+            <span>DNA/RNA Extraction</span><span>PCR & RT-PCR</span><span>Gel Electrophoresis</span>
+            <span>Microbial culturing</span><span>Enzyme isolation</span><span>Antagonism testing</span>
+            <span>R Programming</span><span>Biomarker discovery</span><span>HACCP/GMP</span>
+            <span>Plant tissue culture</span><span>Cytology</span><span>Medical diagnostics</span>
+          </div>
+          <h3 style="margin-top:1.5rem">Languages & soft skills</h3>
+          <div class="tags-cloud">
+            <span>Arabic (Native)</span><span>English B2</span><span>Team leadership</span>
+            <span>Scientific writing</span><span>Problem solving</span><span>Time management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training & Certifications (filterable) -->
+  <section id="training" class="section full-section">
+    <div class="container">
+      <h2 class="section-title">📜 Training & certifications</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active-filter" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cert">Certifications</button>
+        <button class="filter-btn" data-filter="workshop">Workshops</button>
+      </div>
+      <div class="training-grid" id="trainingGrid"></div>
+    </div>
+  </section>
+
+  <!-- Bioinformatics & Biomarker Discovery (fully corrected) -->
+  <section id="bioinfo" class="section full-section accent-bg">
+    <div class="container">
+      <h2 class="section-title">🧬 Bioinformatics & biomarker discovery</h2>
+      <div class="bio-card">
+        <div class="bio-text">
+          <h3>R programming · HackBio · OmniGenics</h3>
+          <p><strong>OmniGenics (Remote):</strong> Completed focused training in R programming – from foundational concepts to applied biological data analysis.</p>
+          <p><strong>HackBio (Remote):</strong> Worked on multiple bioinformatics projects with primary focus on <strong>breast cancer biomarker discovery</strong>. Gained hands‑on experience with transcriptomics data analysis, differential expression, volcano plots, and data interpretation workflows.</p>
+          <p>Skilled in data wrangling, ggplot2 visualisation, and statistical analysis for genomics.</p>
+          <div class="code-snippet">
+            <i class="fab fa-r-project"></i> # Example: DESeq2‑inspired analysis for biomarker discovery<br>
+            res &lt;- results(dds, contrast = c("condition", "tumor", "normal"))<br>
+            sig_genes &lt;- subset(res, padj &lt; 0.05 &amp; abs(log2FoldChange) &gt; 1)<br>
+            # Visualise with ggplot2<br>
+            ggplot(sig_genes, aes(x = log2FoldChange, y = -log10(padj))) +<br>
+            &nbsp;&nbsp;geom_point()
+          </div>
+        </div>
+        <div class="bio-icon"><i class="fas fa-chart-line"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Volunteering -->
+  <section class="section full-section alt-bg">
+    <div class="container">
+      <h2 class="section-title">🤝 Leadership & volunteering</h2>
+      <div class="volunteer-grid">
+        <div class="vol-card"><i class="fas fa-users"></i> <strong>Head of Public Relations</strong> — Pioneers of Biotech Team (2025)</div>
+        <div class="vol-card"><i class="fas fa-handshake"></i> <strong>FAO Model Delegate</strong> — Simulated UN conference (2023)</div>
+        <div class="vol-card"><i class="fas fa-chalkboard-user"></i> <strong>Lab mentor</strong> — Guided junior students in microbiology protocols</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Real Information & Telegram -->
+  <section id="contact" class="section full-section contact-section">
+    <div class="container">
+      <h2 class="section-title">📫 Connect with me</h2>
+      <div class="contact-card">
+        <p>Open for entry-level roles in QC, molecular diagnostics, R&D, or biotech.</p>
+        <div class="contact-details">
+          <a href="tel:+201016951779" class="contact-link"><i class="fas fa-phone-alt"></i> +20 101 695 1779</a>
+          <a href="mailto:tawf10ek@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> tawf10ek@gmail.com</a>
+          <a href="https://www.linkedin.com/in/tawfek-ahmed-a5aab4239" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <div class="contact-address">
+          <i class="fas fa-map-marker-alt"></i> Nasr City, Cairo, Egypt
+        </div>
+        <a href="https://t.me/Tawfek_53" target="_blank" class="btn-primary telegram-btn">
+          <i class="fab fa-telegram-plane"></i> Message on Telegram
+        </a>
+        <p class="telegram-note">(Opens Telegram – make sure you have Telegram installed)</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Tawfek Ahmed — Biotechnology portfolio | <i class="fas fa-dna"></i> PCR · R · GMP · HACCP</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
